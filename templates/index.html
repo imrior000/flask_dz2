@@ -1,0 +1,15 @@
+{% extends 'base1.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+<form action="/" method="POST">
+    Ваше имя  : <input name="name" type="text">
+    <br>
+    Ваш e-mail: <input name="mail" type="text">
+    <br>
+    <input type="submit" value="войти">
+</form>
+{% endblock %}

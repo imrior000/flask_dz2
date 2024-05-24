@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>
+        {% block title %}
+            Титл страницы
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="block0">
+        <div class="block">
+            <div class="header">
+                {% block header %}
+                    &nbsp;
+                {% endblock %}
+            </div>
+        </div>
+        <div class="block">
+            <div class="otstup">
+                <div class="block_content">
+                    {% block content %}
+                        Контэнт
+                    {% endblock %}
+                </div>
+            </div>    
+        </div>
+        <div class="block">
+            <div class="footer" id="footer">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+</body>
+</html>
